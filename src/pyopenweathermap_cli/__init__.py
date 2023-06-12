@@ -1,4 +1,4 @@
 from .__version__ import __version__
-from .core.module1 import greet
-from .core.module2 import wish_farewell
+from .core.weather import get_weather
+from .core.geolocation import get_coordinates
 from .main import app

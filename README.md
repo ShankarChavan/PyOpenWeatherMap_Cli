@@ -20,7 +20,7 @@ touch secrets.ini
 Add secret key to the `secrets.ini` file in the following format:
 ```ini
 ; secrets.ini
-[openweather]
+[openweathermap]
 api_key=<YOUR-OPENWEATHER-API-KEY>
 ```
 

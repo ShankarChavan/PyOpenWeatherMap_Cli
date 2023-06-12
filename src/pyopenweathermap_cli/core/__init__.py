@@ -1,2 +1,2 @@
-from .module1 import greet
-from .module2 import wish_farewell
+from .weather import get_weather
+from .geolocation import get_coordinates
