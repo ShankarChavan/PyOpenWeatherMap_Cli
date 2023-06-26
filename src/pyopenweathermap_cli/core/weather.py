@@ -28,13 +28,16 @@ class WeatherInfo:
             wind_speed=data["wind"]["speed"],
         )
 
+# write get_weather function that takes in a city,
+# calls the openweathermap api and returns the weather for that city
+# json output from api call is returned in WeatherInfo dataclass
 
 def get_weather(city: str) -> dict:
     """Get the weather for a city.
     Args:
         city: The name of the city.
     Returns:
-        string: The weather for the city.
+        dict:  WeatherInfo dataclass.
     """
 
     query_url = f"{Weather_URL}?q={city}&appid={get_api_key()}&units=metric"
@@ -48,6 +51,8 @@ def get_weather(city: str) -> dict:
     weather_info = WeatherInfo.from_dict(weather_data)
     return weather_info
 
+# write print_weather_info function that takes in a WeatherInfo dataclass
+# and prints the weather information
 
 def print_weather_info(data: WeatherInfo) -> str:
     """Prints the weather information.

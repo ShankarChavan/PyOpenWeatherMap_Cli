@@ -27,7 +27,6 @@ generate file tree with `tree` command
 ├── mkdocs.yml
 ├── poetry.lock
 ├── pyproject.toml
-├── secrets.ini
 ├── src
 │   └── pyopenweathermap_cli
 │       ├── __init__.py
