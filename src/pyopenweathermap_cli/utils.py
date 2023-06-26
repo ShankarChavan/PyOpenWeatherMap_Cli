@@ -1,18 +1,20 @@
-from configparser import ConfigParser
+import os
+from datetime import datetime
 
-#constants for weather API url and geolocation API url
-Weather_URL:str = "https://api.openweathermap.org/data/2.5/weather"
-Geolocation_URL:str  = "http://api.openweathermap.org/geo/1.0/direct"
+# constants for weather API url and geolocation API url
+Weather_URL: str = "https://api.openweathermap.org/data/2.5/weather"
 
 
-# write get_api_key() function to read api key from secrets.ini file
 def get_api_key():
-    """Read the API key from the secrets.ini file.
-
+    """Read the API key from the environment variable.
     Returns:
         string: The API key.
-
     """
-    config = ConfigParser()
-    config.read("../../secrets.ini")
-    return config["openweathermap"]["api_key"]
+    api_key_val = os.environ["api_key"]
+    return api_key_val
+
+
+def format_date(timestamp: int) -> str:
+    """Formats a timestamp into date time."""
+    dt = datetime.fromtimestamp(timestamp)
+    return dt.strftime("%m/%d/%Y, %H:%M:%S")

@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "PyOpenWeatherMap_Cli"
+name = "pyopenweathermap_cli"
 version = "0.1.1"
 description = "A production ready python CLI template."
 repository = "https://github.com/PyOpenWeatherMap_Cli"
@@ -19,10 +19,10 @@ classifiers=[
 [tool.poetry.dependencies]
 python = "^3.8"
 typer = "^0.4.1"
+rich = "^13.4.0"
 pytest = {version = "^7.1.2", optional = true}
 pytest-cov = {version = "^3.0.0", optional = true}
 black = {version = "^22.3.0", optional = true}
-isort = {version = "^5.10.1", optional = true}
 flake8 = {version = "^4.0.1", optional = true}
 pylint = {version = "^2.13.8", optional = true}
 mypy = {version = "^0.961", optional = true}
@@ -33,10 +33,12 @@ mkdocstrings-python = {version = "^0.7.1", optional = true}
 mkdocs-material = {version = "^8.3.9", optional = true}
 bump2version = {version = "^1.0.1", optional = true}
 
+
 [tool.poetry.extras]
 test = [
     "pytest",
     "pytest-cov",
+    "pytest-mock",
 ]
 
 lint = [
@@ -59,6 +61,7 @@ docs = [
 dev = [
     "pytest",
     "pytest-cov",
+    "pytest-mock",
     "black",
     "isort",
     "flake8",
@@ -73,7 +76,7 @@ dev = [
 ]
 
 [tool.poetry.scripts]
-pytemplates = "PyOpenWeatherMap_Cli.main:app"
+pytemplates = "pyopenweathermap_cli.main:app"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

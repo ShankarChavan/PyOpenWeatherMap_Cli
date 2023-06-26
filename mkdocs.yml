@@ -15,7 +15,6 @@ nav:
     - Home: index.md
     - User Guide:
       - Installation: user_guide/installation.md
-      - Usage: user_guide/usage.md
     - Developer Guide:
       - Developer Setup: developer_guide/developer_setup.md
       - Commands: developer_guide/commands.md
@@ -25,9 +24,7 @@ nav:
       - App Reference: app_reference/app.md
     - Code Reference:
       - Core:
-        - Module1: code_reference/module1.md
-        - Module2: code_reference/module2.md
+        - weather: code_reference/weather.md
     - Extras:
       - File Tree: extras/file_tree.md
       - Credits: extras/credits.md
-

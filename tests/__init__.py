@@ -1,2 +1,1 @@
 """Required for pytest."""
-

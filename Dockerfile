@@ -6,7 +6,7 @@ RUN apt-get update \
 
 # Install Poetry - respects $POETRY_VERSION & $POETRY_HOME
 ENV POETRY_HOME="/opt/poetry" \
-    POETRY_VERSION="1.1.13"
+    POETRY_VERSION="1.5.1"
 RUN curl -sSL https://install.python-poetry.org/ | python
 
 # Add Poetry to the path
@@ -39,4 +39,3 @@ FROM python:3.8-slim AS runtime
 COPY --from=build .venv .venv
 ENV PATH=".venv/bin:$PATH"
 ENTRYPOINT ["pytemplates"]
-

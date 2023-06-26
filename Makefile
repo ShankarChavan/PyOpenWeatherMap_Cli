@@ -66,4 +66,3 @@ pre-release: ## bump the version and create the release tag
 	git describe --tags --abbrev=0
 	head pyproject.toml | grep version
 	cat src/pyopenweathermap_cli/__version__.py
-

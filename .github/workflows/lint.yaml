@@ -28,4 +28,3 @@ jobs:
       run: poetry install --extras=lint
     - name: Run linting tools
       run: poetry run make lint
-

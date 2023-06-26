@@ -29,4 +29,3 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         branch: docs # The branch the action should deploy to.
         folder: site/ # The folder the action should deploy.
-

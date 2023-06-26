@@ -10,25 +10,14 @@ A command-line tool that accepts a city's name and returns the current weather f
 # Usage
 - Create an account on [OpenWeatherMap](https://openweathermap.org/) and get your API key
 - Clone this repository
-- Create a file named `secrets.ini` in the root directory of the project
 
-- Open terminal and run the following command:
+
+Add api_secret to evnironment variable:
 ```bash
-touch secrets.ini
-```
-
-Add secret key to the `secrets.ini` file in the following format:
-```ini
-; secrets.ini
-[openweathermap]
-api_key=<YOUR-OPENWEATHER-API-KEY>
+export api_key=<your_api_key>
 ```
 
 Run the following command to run cli:
 ```bash
-python3 main.py <city-name>
+python main.py weather <city-name>
 ```
-
-
-
-
