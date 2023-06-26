@@ -1,11 +1,25 @@
 # PyOpenWeatherMap_Cli
 A command-line tool that accepts a city's name and returns the current weather forecast. Leverage OpenWeatherMap API to fetch weather data and parse it using Python
 
+# Table of Contents
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+
 # Features
 - [x] Fetch weather data from OpenWeatherMap API
 - [x] Parse JSON data using Python
 - [x] Display weather data in a readable format
 - [x] Accept city name as a command-line argument
+
+
+# Installation
+- Clone this repository
+- Install the required packages using the following command:
+```bash
+poetry install
+```
+
 
 # Usage
 - Create an account on [OpenWeatherMap](https://openweathermap.org/) and get your API key
