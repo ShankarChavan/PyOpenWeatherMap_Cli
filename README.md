@@ -19,5 +19,19 @@ export api_key=<your_api_key>
 
 Run the following command to run cli:
 ```bash
-python main.py weather <city-name>
+python main.py <command> <city-name>
+
+```
+example:
+```bash
+cd src/pyopenweathermap_cli/
+python main.py weather mumbai
+```
+
+
+Output of the above looks like this:
+```bash
+The weather in Mumbai is drizzle with a temperature of 25.99 degrees Celsius.
+It feels like 25.99 degrees Celsius.
+The humidity is 100 percent and the wind speed is 1.54 meters per second.
 ```
